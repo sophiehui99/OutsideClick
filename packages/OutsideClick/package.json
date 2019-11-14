@@ -1,5 +1,5 @@
 {
-  "name": "OutsideClick",
+  "name": "react-hooks-outside-click",
   "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
@@ -12,5 +12,6 @@
     "react-dom": "^16.9.0"
   },
   "author": "sophiehui",
-  "license": "ISC"
+  "license": "ISC",
+  "gitHead": "e4e4f73f7184ace79aac476a087c805b547aaa38"
 }

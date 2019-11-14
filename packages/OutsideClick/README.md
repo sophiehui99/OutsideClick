@@ -14,7 +14,7 @@
 
 ##### example
 ```
-import OutSideClick from 'OutSideClick';
+import OutSideClick from 'react-hooks-outside-click';
 import React from 'react';
 
 const InsideComponent = () =>{
