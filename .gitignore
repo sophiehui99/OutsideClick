@@ -1,0 +1,9 @@
+node_modules
+.idea/
+npm-debug.log
+dist
+.DS_Store
+.vscode
+*debug.log
+coverage
+resume
