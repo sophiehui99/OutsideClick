@@ -19,8 +19,8 @@ import React from 'react';
 
 const InsideComponent = () =>{
     return(
-        <OutSideClick >
-            <div onClickOutside = {()=>{console.log('点击我的外侧，我就会被打印')}}>
+        <OutSideClick onClickOutside = {()=>{console.log('点击我的外侧，我就会被打印')}}>
+            <div>
                     我是内部，请点击我的内外部测试
                 </div>
         </OutSideClick>
