@@ -18,10 +18,14 @@ const OutsideClick = (props) =>{
     }
 
     useEffect(() => {
-        document.addEventListener('click', handClick, true);
-        return () => {
-            document.removeEventListener('click', handClick, true);
-        };
+        useEffect(() => {
+            document.addEventListener('click', handClick, true);
+            document.addEventListener('touchend', handClick, true);
+            return () => {
+                document.removeEventListener('click', handClick, true);
+                document.removeEventListener('touchend', handClick, true);
+            };
+        }, []);
     }, []);
 
     const {onClickOutside,...args} = props
