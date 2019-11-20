@@ -32,14 +32,12 @@ var OutsideClick = function OutsideClick(props) {
   };
 
   (0, _react.useEffect)(function () {
-    (0, _react.useEffect)(function () {
-      document.addEventListener('click', handClick, true);
-      document.addEventListener('touchend', handClick, true);
-      return function () {
-        document.removeEventListener('click', handClick, true);
-        document.removeEventListener('touchend', handClick, true);
-      };
-    }, []);
+    document.addEventListener('click', handClick, true);
+    document.addEventListener('touchend', handClick, true);
+    return function () {
+      document.removeEventListener('click', handClick, true);
+      document.removeEventListener('touchend', handClick, true);
+    };
   }, []);
   var onClickOutside = props.onClickOutside,
       args = (0, _objectWithoutProperties2["default"])(props, ["onClickOutside"]);
